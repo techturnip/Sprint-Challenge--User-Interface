@@ -159,7 +159,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -175,6 +175,12 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-content .text-container {
+        width: 95%;
+    }
 }
 
 .middle-content {
@@ -204,6 +210,16 @@ p {
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .middle-content .boxes {
+        justify-content: space-around;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -216,6 +232,21 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .bottom-content .text-container {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .bottom-content .text-container:last-child {
+        margin-bottom: 0;
+    }
 }
 
 footer {
@@ -239,7 +270,16 @@ footer nav a {
 
 /* My Code */
 .main-header {
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.jumbo {
+    max-width: 100%;
+}
+
+.jumbo img {
+    width: 100%;
 }
 
 .navbar {
@@ -249,14 +289,37 @@ footer nav a {
     text-align: center;
 }
 
-.navbar a {
+.navbar .nav-links {
+    display: flex;
+    width: 100%;
+}
+
+.navbar .nav-links a {
     flex: 1;
     text-decoration: none;
     color: black;
 }
 
-.navbar a:hover {
+.navbar .nav-links a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar img {
+        margin-bottom: 10px;
+    }
+
+    .navbar .nav-links {
+        width: 90%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 }
 
 .middle-content .boxes .box:first-child {
@@ -322,6 +385,14 @@ footer nav a {
     margin: 30px 0;
 }
 
+.about-content__img-box {
+    width: 100%;
+}
+
+.about-content__img-box img {
+    width: 100%;
+}
+
 .about-content h2 {
     margin-top: 10px;
 }
@@ -333,6 +404,13 @@ footer nav a {
     padding: 10px 20px;
     border-radius: 9px;
     font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-content {
+        width: 95%;
+
+    }
 }
 
 .bottom-content--about {
