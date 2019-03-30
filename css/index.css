@@ -177,6 +177,7 @@ p {
     padding-bottom: 20px;
 }
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
     .top-content .text-container {
         width: 95%;
@@ -210,6 +211,7 @@ p {
     justify-content: center;
 }
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
     .middle-content .boxes {
         justify-content: space-around;
@@ -234,6 +236,7 @@ p {
     padding-right: 0;
 }
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
     .bottom-content {
         flex-wrap: wrap;
@@ -304,6 +307,7 @@ footer nav a {
     text-decoration: underline;
 }
 
+/* Responsive */
 @media only screen and (max-width: 800px) {
     .navbar {
         flex-direction: column;
@@ -406,6 +410,7 @@ footer nav a {
     font-size: 16px;
 }
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
     .about-content {
         width: 95%;
